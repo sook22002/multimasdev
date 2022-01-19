@@ -3,7 +3,7 @@
 grade = {"국어":95, "영어":90, "수학":80, "과학":50}
 
 sum = 0
-for key, value in grade.items():
+for value in grade.values():
     sum = sum + value
 
 average = sum / len(grade)
