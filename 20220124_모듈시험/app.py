@@ -22,7 +22,7 @@ def FlaskData(): # 요청 받음
 
     dataURL = "https://api.odcloud.kr/api/apnmOrg/v1/list?"
     dataURL += "page=" + str(1) + "&perPage=" + str(10)
-    dataURL += "cond=" + "강남구"
+    dataURL += "&cond%5BorgZipaddr%3A%3ALIKE%5D=" + "강남구"
     dataURL += "&serviceKey=" + keyValue
     #tempURL = r"https://api.odcloud.kr/api/apnmOrg/v1/list?page=1&perPage=10
     # &cond=""
